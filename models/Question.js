@@ -9,8 +9,9 @@ class Question{
           id INTEGER PRIMARY KEY,
           CONTENT text
         )`
+        
         db.Run(sql, function(){
-          resolve ("questions table created")
+          resolve("questions table created")
         })
       })
     }
